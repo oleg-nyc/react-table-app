@@ -12,7 +12,12 @@ const options = {
     useUnifiedTopology: true
 };
 
-mongoose.connect(process.env.MONGODB_URI, options);
+const { exec } = require("child_process");
 
-// Start the web server
-server.start(PORT)
+exec("node -v", (error, stdout, stderr) => {
+    const mongoDB_URI = stdout < "v17" ? process.env.MONGODB_URI : 'mongodb://0.0.0.0:27017/practices';
+    mongoose.connect(mongoDB_URI, options);
+    server.start(PORT)
+});
+
+

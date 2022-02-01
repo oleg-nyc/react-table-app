@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,EACI,sBAAA,CAEJ,QAII,sCAAA,CAHA,UACI,kBAAA","file":"main.14f9907c.chunk.css","sourcesContent":["* {\r\n    outline: none!important;\r\n}\r\n.select{ \r\n    * {\r\n        border: 0!important;\r\n    }\r\n    border-bottom: 1px solid #333!important;\r\n}"]}

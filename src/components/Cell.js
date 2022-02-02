@@ -157,8 +157,7 @@ export default function Cell({rowId, val, name, opt, type}) {
             }
 
             tableData.rows = rows;
-            tableData._invalid[rowId][name] = !!invalid;
-            setTableData(tableData);
+            tableData._invalid[rowId][name] = !!invalid;    
     }
 
     let enumm = [];
